@@ -134,7 +134,6 @@ Fig1 false positive due to agent skill vfx:
 
 With the use of Riot API (that's not available to the public like me...), we'll be able to get timestamps of each duel and calculate the proper timestamps for a 100% success rate. 
 
-## Conclusion
 
 
 # References 
