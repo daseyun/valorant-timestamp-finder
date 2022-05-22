@@ -13,7 +13,7 @@ Navigate to `replay-timestamps` directory.
 
 
 
-# intro 
+# Intro / Motivation
 As a casual player, I've noticed I hit a huge wall in progression and had trouble improving.  
 I started recording my gameplay. Without the heat of the moment or stress it becomes easier to spot the flaws in your gameplay as a spectator. 
 
@@ -24,7 +24,7 @@ With the lack of replay system in Valorant currently May 2022, recording your ow
 
 I didn't want to sift through the entire clip and wanted this extra time commitment to be efficient. 
 
-# progress 
+# Progress 
 
 I found the best framework to parse video to be [OpenCV](https://opencv.org/). 
 
@@ -58,7 +58,7 @@ Since `cv2.selectROI(im)` is a manual user operation in which the program is pau
 * NOTE: Assuming every recording is capped at 2000. If this is not the case, we'll have to find a better way to dynamically get the regions. 
 
 
-### detecting kill color in our image 
+### Detecting kill color in our image 
 
 This was the color value we wanted to isolate for the user mark. 
 
@@ -110,7 +110,7 @@ Fig1 false positive due to agent skill vfx:
 With the use of Riot API (that's not available to the public like me...), we'll be able to get timestamps of each duel and calculate the proper timestamps for a 100% success rate. 
 
 
-# references 
+# References 
 
 skip frames: https://stackoverflow.com/questions/22704936/reading-every-nth-frame-from-videocapture-in-opencv  
 second to hms conversion: https://stackoverflow.com/questions/1384406/convert-seconds-to-hhmmss-in-python  
