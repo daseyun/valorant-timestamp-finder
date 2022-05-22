@@ -7,7 +7,7 @@
 - [Python3](https://www.python.org/downloads/) 
 
 Clone the repo, and copy the path to your recording.  
-Open up opencvtest.py in an editor and edit the path to the recorded video. 
+Open up opencvtest.py in an editor and edit the path to the recorded video.   
 Navigate to `replay-timestamps` directory.  
 `$> python3 opencvtest.py`
 
