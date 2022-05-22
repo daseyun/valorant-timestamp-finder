@@ -1,5 +1,10 @@
 # Valorant Kill/Death/Assist timeframe getter
 
+A program designed to process your valorant recordings and figure out the timestamps of your duels for efficient analysis. 
+Uses OpenCV to analyze the HSV of the "user mark" in kill banners to find duel timestamps.
+
+Runtime: 27 minute recording took 70 seconds to finish processing.  
+
 # Running the program
 
 ### Prerequisites
