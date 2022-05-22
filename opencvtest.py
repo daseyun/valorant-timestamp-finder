@@ -6,8 +6,8 @@ import datetime
 import time 
 import numpy as np
 
-  
-VIDEO_FPS = 180 # skip by 3 seconds
+# TODO: SET FPS here. If your video is 30fps, VIDEO_FPS should be set to 30 * 3, etc. 
+VIDEO_FPS = 180 # skip by 3 seconds; default 60 fps 
 # Function to extract frames
 def FrameCapture(path):
       
@@ -24,8 +24,8 @@ def FrameCapture(path):
     # im = cv2.imread("images\\frame4560.jpg")
     # roi = cv2.selectROI(im) # (1967, 5, 584, 377  | (1861, 0, 690, 387) | (1894, 121, 655, 258)
     # print(roi) 
-    img = cv2.imread("images\\valotest2.png")
-    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    # img = cv2.imread("images\\valotest2.png")
+    # hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
     # new against KillJoy
     lower_val_yellow = np.array([26, 106, 0]) 
@@ -118,8 +118,9 @@ def FrameCapture(path):
             # cv2.imshow("yellow", mask)
             # cv2.waitKey()
 
-            # print(str(timestamp))
-            cv2.imwrite("images\\test%d_%s.jpg" %(count, str(timestamp)), image)
+            print(str(timestamp))
+            # TODO : uncomment below to save "duel detected" frames for debugging
+            # cv2.imwrite("images\\test%d_%s.jpg" %(count, str(timestamp)), image)
         # print(count, timestamp)
 
         print(y, both)
@@ -134,6 +135,5 @@ def FrameCapture(path):
 if __name__ == '__main__':
   
     # Calling the function
-    # FrameCapture("C:\\Users\\Admin\\PycharmProjects\\project_1\\openCV.mp4")
-    # FrameCapture("C:\\Users\\Admin\\Videos\\Valorant\\Valorant 2022.04.24 - 00.06.21.05.mp4")
-    FrameCapture("C:\\Users\\Admin\\Videos\\Valorant\\Valorant 2022.04.23 - 23.24.48.04.mp4")
+    # TODO: Link recording file here
+    FrameCapture("C:\\Users\\Admin\\Videos\\Valorant\\LINK_RECORDING_HERE.mp4")
