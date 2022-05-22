@@ -121,7 +121,7 @@ Here's a successfully matched frame in action:
 ## Problems 
 
 Here's the limitations of attempting to find the timestamps via HSV values. 
-- The kill banner lengths are dependent on name length. Since the user mark we check the HSV for is at the edges of the banner, we need to account for longer usernames and keep our ROI wider than ideal. 
+- Bigger ROI scans game map assets which sometimes match the HSV values of the user mark. The kill banner lengths are dependent on name length. Since the user mark we check the HSV for is at the edges of the banner, we need to account for longer usernames and keep our ROI wider than ideal. 
     - One workaround to this would be to have the user turn off multiplayer user names off. Showing only the agent names which are limited to one word.
 
 -   Agent skill effects. There are at least two agent skill vfx that cause the edges of our screen to light up yellow. Because the HSV values are similar enough and the nature of 3D game has us move our camera constantly, the program detects the HSV value we set for the user mark in frames with the skill VFX instead. This is the biggest issue with trying to find the timestamps via HSV analysis. (Fig 1)
@@ -132,8 +132,9 @@ Fig1 false positive due to agent skill vfx:
 
 ## Solution
 
-With the use of Riot API (that's not available to the public like me...), we'll be able to get timestamps of each duel and calculate the proper timestamps for a 100% success rate. 
+With the use of Riot API (that's not available to the public like me...), we'll be able to get timestamps of each duel and calculate the proper timestamps for a 100% success rate.  
 
+Even with the problems mentioned above, the program should cut down your recorded gameplay analysis since the only problem is false positives.
 
 
 # References 
