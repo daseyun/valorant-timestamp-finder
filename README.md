@@ -11,6 +11,26 @@ Open up opencvtest.py in an editor and edit the path to the recorded video.
 Navigate to `replay-timestamps` directory.  
 `$> python3 opencvtest.py`
 
+Example output: 
+```
+PS C:\Users\Admin\projects\replay-timestamps> python3 opencvtest.py
+00_02_03
+00_03_00
+00_03_03
+00_03_21
+00_03_24
+00_04_36
+00_06_45
+00_08_06
+00_10_09
+00_11_03
+00_11_42
+00_12_54
+00_12_57
+00_13_18
+00_14_12
+00_15_33
+```
 
 
 # Intro / Motivation
@@ -105,9 +125,11 @@ Fig1 false positive due to agent skill vfx:
 ![falsePositiveBrim](images/test10800_00_03_00.jpg)
 
 
-## Solution: 
+## Solution
 
 With the use of Riot API (that's not available to the public like me...), we'll be able to get timestamps of each duel and calculate the proper timestamps for a 100% success rate. 
+
+## Conclusion
 
 
 # References 

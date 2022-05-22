@@ -123,7 +123,6 @@ def FrameCapture(path):
             # cv2.imwrite("images\\test%d_%s.jpg" %(count, str(timestamp)), image)
         # print(count, timestamp)
 
-        print(y, both)
         count += VIDEO_FPS 
         vidObj.set(cv2.CAP_PROP_POS_FRAMES, count)
   
@@ -136,4 +135,5 @@ if __name__ == '__main__':
   
     # Calling the function
     # TODO: Link recording file here
-    FrameCapture("C:\\Users\\Admin\\Videos\\Valorant\\LINK_RECORDING_HERE.mp4")
+    FrameCapture("C:\\Users\\Admin\\Videos\\Valorant\\Valorant 2022.04.23 - 23.24.48.04.mp4")
+    # FrameCapture("C:\\Users\\Admin\\Videos\\Valorant\\LINK_RECORDING_HERE.mp4")
